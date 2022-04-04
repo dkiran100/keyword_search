@@ -27,7 +27,7 @@ def runScript(keyword):
     driver.get(url)
     driver.implicitly_wait(20)
 
-    txt = driver.find_element(by=By.XPATH, value="/html/body/div[1]/div/div[2]/div[1]/div[2]/div/div/div/div[3]/div/div[3]/div[2]/table").text
+    txt = driver.find_element(by=By.XPATH, value="/html/body/div[1]/div/div[2]/div[1]/div[3]/div/div/div/div[3]/div/div[3]/div[2]/table/tbody/tr[1]/td[1]").text
     driver.quit()
 
     return(txt)
